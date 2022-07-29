@@ -42,8 +42,8 @@ public class ProductController {
 	
 	@GetMapping("/updateForm")
 	public String updateForm(@RequestParam("id") Integer id, Model model) {
-		Product emp = entityManager.findById(id);
-		model.addAttribute("PRODUCT",emp);
+		Product prod = entityManager.findById(id);
+		model.addAttribute("PRODUCT",prod);
 		return "form1.html";
 	}
 	
@@ -53,5 +53,12 @@ public class ProductController {
 		
 		return "redirect:/Product/ProdList";
 	}
-
+	
+	@GetMapping("/search")
+	public String searchProduct(@RequestParam("name") String name, Model model) {
+		List<Product> prod = entityManager.searchBy(name);
+		model.addAttribute("PRODUCT", prod);
+		return "home.html";
+	}
+	
 }

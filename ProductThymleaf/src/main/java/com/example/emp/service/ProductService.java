@@ -11,6 +11,9 @@ public interface ProductService {
 	public List<Product> findAll();
 	public Product findById(Integer id);
 	public void deleteById(Integer id);
+	public void findByNameContainsAllIgnoreCase(String name);
+	public List<Product> searchBy(String name);
+	
 
 	
 

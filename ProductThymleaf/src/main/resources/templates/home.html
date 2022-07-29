@@ -33,10 +33,10 @@
 	<h3 style="color:darkblue;">PRODUCT DATA</h3>
 	<div class="container-fluid">
 		<a th:href="@{/Product/addProd}" class="btn btn-primary">Add Product</a>
-		<div class="form" style="margin-left:900px;">
-			<form method="get" action="search">
-				<input type="text" name="keyword">
-				<input type="submit" value="Search">
+		<div class="form" style="margin-left:1000px;">
+			<form th:action="@{/Product/search}" class="form-inline">
+				<input class="form-control ml-5 mr-sm-2 mb-3" type="search" name="name" placeholder="search by product name"/>
+				<button class="btn btn-primary mb-3" type="submit">Search</button>
 			</form>
 		</div>
 		<table class="table table-hover">

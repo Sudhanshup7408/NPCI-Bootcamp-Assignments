@@ -39,6 +39,20 @@ public class ProductServiceImpl implements ProductService {
 		prodrepo.save(prod);
 		
 	}
-	
-
+	@Override
+	public List<Product> searchBy(String name){
+		List<Product> result = null;
+		if(name != null && (name.trim().length() > 0)) {
+			result = prodrepo.findByNameContainsAllIgnoreCase(name);
+		}
+		else {
+			result = findAll();
+		}
+		return result;
+	}
+	@Override
+	public void findByNameContainsAllIgnoreCase(String name) {
+		// TODO Auto-generated method stub
+		
+	}
 }
