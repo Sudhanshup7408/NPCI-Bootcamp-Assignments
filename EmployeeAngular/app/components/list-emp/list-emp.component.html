@@ -1,1 +1,29 @@
-<p>list-emp works!</p>
+<div class="container">
+    <h2 style="margin-left: 500px;">EMPLOYEE DATA</h2>
+    <table  border="3" class="table table-sm table-hover table-dark table-bordered margin-left:80px;">
+        <thead class="bg-info">
+        <tr>
+            <th>Employee ID</th>
+            <th>Employee Name</th>
+            <th>Job</th>
+            <th>Hire Date</th>
+            <th>ManagerID</th>
+            <th>Salary</th>
+            <th>Comission</th>
+            <th>Department No</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let temp of employees">
+            <td>{{temp.empno}}</td>
+            <td>{{temp.ename}}</td>
+            <td>{{temp.job}}</td>
+            <td>{{temp.hiredate}}</td>
+            <td>{{temp.managerid}}</td>     
+            <td>{{temp.salary}}</td>
+            <td>{{temp.commission}}</td>
+            <td>{{temp.deptno}}</td>
+        </tr>
+    </tbody>
+</table>
+</div>

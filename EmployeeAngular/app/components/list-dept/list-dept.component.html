@@ -1,0 +1,19 @@
+<div class="container">
+    <h2 style="margin-left: 500px;">DEPT DATA</h2>
+    <table  border="3" class="table table-hover table-dark table-bordered margin-left:80px;">
+        <thead>
+        <tr>
+            <th>Department No</th>
+            <th>Department Name</th>
+            <th>Location</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let Depttemp of departments">
+            <td>{{Depttemp.deptno}}</td>
+            <td>{{Depttemp.deptname}}</td>
+            <td>{{Depttemp.location}}</td>
+        </tr>
+    </tbody>
+</table>
+</div>
