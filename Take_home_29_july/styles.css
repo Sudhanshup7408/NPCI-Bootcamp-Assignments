@@ -1,0 +1,17 @@
+/* You can add global styles to this file, and also import other style files */
+body{
+    margin-top: 20px;
+    background-color: darkgray;
+    background-image: url(https://www.istockphoto.com/photo/round-podium-with-pink-and-green-lights-background-gm1314248856-402520555?utm_source=unsplash&utm_medium=affiliate&utm_campaign=category_photos_top&utm_content=https%3A%2F%2Funsplash.com%2Fbackgrounds&utm_term=Hq%20background%20images%3A%3A%3A);
+}
+.formdata{
+ margin-left: 400px;
+ font-weight: bold;   
+}
+.button1{
+    margin-left: 150px;
+}
+h3{
+    margin-left: 150px;
+    color: crimson;
+}
