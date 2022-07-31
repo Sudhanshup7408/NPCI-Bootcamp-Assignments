@@ -3,7 +3,7 @@ export class Employee {
         public empno: number,
         public ename: string,
         public job: string,
-        public hiredate:Date,
+        public hiredate:string,
         public managerid:number,
         public salary:number,
         public commission:number,

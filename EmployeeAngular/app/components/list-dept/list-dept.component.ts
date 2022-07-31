@@ -10,6 +10,7 @@ import { Department } from 'src/app/common/department';
 export class ListDeptComponent implements OnInit {
 
   constructor(private service :EmpmgmtserviceService) { }
+  formModel: Department = new Department(0,"","")
   departments : Department[];
   ngOnInit(): void {
     this.listofDepartment()
@@ -20,6 +21,9 @@ export class ListDeptComponent implements OnInit {
       console.log(data)
       this.departments = data;
     })
+  }
+  onSubmit():void{
+    this.departments.push(this.formModel)
   }
 
 }

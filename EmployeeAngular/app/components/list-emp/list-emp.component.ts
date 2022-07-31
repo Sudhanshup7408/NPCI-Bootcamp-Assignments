@@ -10,6 +10,7 @@ import { Employee } from 'src/app/common/employee';
 export class ListEmpComponent implements OnInit {
 
   constructor(private service :EmpmgmtserviceService) { }
+  formModel: Employee = new Employee(0,"","","",0,0,0,0)
   employees : Employee[];
   ngOnInit(): void {
     this.listofEmployees()
@@ -20,6 +21,9 @@ export class ListEmpComponent implements OnInit {
       console.log(data)
       this.employees = data;
     })
+  }
+  onSubmit():void{
+    this.employees.push(this.formModel)
   }
 
 }

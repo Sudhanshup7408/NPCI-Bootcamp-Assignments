@@ -3,23 +3,22 @@ import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ListEmpComponent } from './components/list-emp/list-emp.component';
-import { ListDeptComponent } from './components/list-dept/list-dept.component';
-import { WelcomeComponent } from './components/welcome/welcome.component';
+import { ProductListComponent } from './components/product-list/product-list.component';
+import { CategoryListComponent } from './components/category-list/category-list.component';
 import {FormsModule} from '@angular/forms';
+import { HomeComponent } from './components/home/home.component';
 import { RouterModule, Routes } from '@angular/router';
 const route : Routes =[
-  {path : '',component:WelcomeComponent},
-  {path:'products',component:ListEmpComponent},
-  {path:'categories',component:ListDeptComponent}
+  {path : '',component:HomeComponent},
+  {path:'products',component:ProductListComponent},
+  {path:'categories',component:CategoryListComponent}
 ]
-
 @NgModule({
   declarations: [
     AppComponent,
-    ListEmpComponent,
-    ListDeptComponent,
-    WelcomeComponent
+    ProductListComponent,
+    CategoryListComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
