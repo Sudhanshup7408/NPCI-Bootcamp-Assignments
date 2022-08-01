@@ -1,0 +1,54 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-3"><a routerLink="" class="btn btn-secondary">Home</a></div>
+    </div>
+    &nbsp;
+    <div class="row align-items-start" id="product">
+        <div class="col-3" *ngFor="let list of products">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+
+                    <a><img src="{{list.imageurl}}" class="card-img-top" alt="..."></a>
+                    <p class="card-text">{{list.name}}</p>
+                    <h6>Price</h6>
+
+                    <p style="color: green;">{{list.unitPrice | currency : 'INR'}} </p>
+
+                    <button type="button" class="btn btn-danger" data-bs-toggle="modal"
+                        data-bs-target="#staticBackdrop">
+                        Buy now
+                    </button>
+
+                    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                        tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="staticBackdropLabel">Description</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="row">
+                                        <img src="{{list.imageurl}}" class="card-img-top" alt="...">
+                                    </div>
+                                    <div class="row">
+                                        <p>{{list.description}}</p>
+
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

@@ -1,0 +1,15 @@
+
+.container{
+    margin-left: 500px;
+}
+h2{
+    background-color: gainsboro;
+    text-align: center;
+    color: firebrick;
+}
+.images{
+    margin-top: 40px;
+    width: 200px;
+    height: 200px;
+    margin-left: 37rem;
+}
