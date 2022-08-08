@@ -8,6 +8,6 @@
 
 
 ### Languages and Tools:
-Python |MySQL| Visual Studio Code |GitHub |HTML5 |CSS |Javascript |Python |React js
+Python|JAVA |Spring MVC|Spring Rest|Spring Boot MVC|Hibernate|MySQL|Visual Studio Code |GitHub |HTML5 |CSS |Javascript|TypeScript|Angular
 
 
